@@ -1,0 +1,24 @@
+<div class="container-fluid text-center bg1">
+  <!--<img class="img-circle pull-left" src="img/logo1.png">-->
+  <h1>DUDJ pre-pre-alpha</h1>
+  <h2>var.roomname</h2>
+</div>
+<div class="container-fluid text-center bg2" ng-controller="PlayerController as playerController">
+  <div class="row">
+    <div class="col-md-3 form-group" ng-controller="SubmitSongController as submitSongController">
+      <label>Youtube link:</label>
+      <input ng-model="songURL" type="text" class="input-md form-control">
+      <button ng-click="submitSong()" type="button" class="btn btn-success btn-block">Submit</button>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <youtube-video player="player" player-vars="playerVars" video-id="videoID"></youtube-video>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <ul class="list-group" ng-controller="PlaylistController as playlistController">
+        <li class="list-group-item playlist-song" ng-repeat="song in playlist"><img width="128px" height="72px" src="{{song.thumbnailUrl}}"><h3>{{song.title}}</h3></li>
+      </ul>
+    </div>
+  </div>
+</div>

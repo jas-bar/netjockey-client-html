@@ -9,3 +9,18 @@
 .bg3{
   background-color: #852fa3;
 }
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+body {
+  font: 20px "Montserrat", sans-serif;
+  line-height: 1.8;
+  background-color: #dafb69;
+}
+
+.margin {
+  margin-bottom: 45px;
+}

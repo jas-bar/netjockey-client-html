@@ -1,0 +1,4 @@
+.playlist-song {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
