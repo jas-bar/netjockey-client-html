@@ -3,9 +3,14 @@
   <h2>uz bez tresky :(</h2>
 </div>
 <div class="container-fluid text-center bg2">
-  <div class="form-group">
+  <div class="form-group" ng-controller="CreateRoomController as createRoomController">
     <label>Room name:</label>
-    <input type="text" class="form-control">
-    <button type="button" class="btn btn-primary btn-block">Create Room</button>
+    <input type="text" ng-model="roomName" class="form-control">
+    <button type="button" ng-click="submitRoomInfo()" class="btn btn-primary btn-block">Create Room</button>
+  </div>
+</div>
+<div class="container-fluid text-center bg3" ng-controller="RoomListController as roomListController">
+  <div class="list-group">
+    <a ng-repeat="room in roomList" class="list-group-item roomlist-room" href="#/room/{{room.id}}"><h3><span class="glyphicon glyphicon-play"></span>{{room.name}}</h3></a>
   </div>
 </div>

@@ -1,13 +1,16 @@
 .bg1{
-  background-color: #32bb8e;
+  /*background-color: #32bb8e;*/
+  background-color: #222222;
 }
 
 .bg2{
-  background-color: #45a1cf;
+  /*background-color: #45a1cf;*/
+  background-color: #1b1b1b;
 }
 
 .bg3{
-  background-color: #852fa3;
+  /*background-color: #852fa3;*/
+  background-color: #2d2d2d;
 }
 
 .container-fluid {
@@ -18,7 +21,8 @@
 body {
   font: 20px "Montserrat", sans-serif;
   line-height: 1.8;
-  background-color: #dafb69;
+  background-color: #000000;
+  color: #cfcfcf;
 }
 
 .margin {
