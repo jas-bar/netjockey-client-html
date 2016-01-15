@@ -10,7 +10,8 @@
   </div>
 </div>
 <div class="container-fluid text-center bg3" ng-controller="RoomListController as roomListController">
-  <div class="list-group">
-    <a ng-repeat="room in roomList" class="list-group-item roomlist-room" href="#/room/{{room.id}}"><h3><span class="glyphicon glyphicon-play"></span>{{room.name}}</h3></a>
+  <label>Rooms list:</label>
+  <div class="list-group roomlist">
+    <a ng-repeat="room in roomList" class="list-group-item roomlist-room" href="#/room/{{room.id}}"><h3><span class="glyphicon glyphicon-play pull-left"></span>{{room.name}}</h3></a>
   </div>
 </div>

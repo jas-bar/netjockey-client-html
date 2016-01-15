@@ -1,11 +1,13 @@
 var app = angular.module("DUDJ");
 
-app.controller('RoomController', function($window, $interval, $scope, $rootScope, $routeParams, $http){
+app.controller('RoomController', function($window, $location, $interval, $scope, $rootScope, $routeParams, $http){
+
   /*INIC variables*/
   $scope.playlist = [];
   $scope.videoUUID = 0;
   $scope.roomID = $routeParams.roomID;
   $scope.startSeconds = 0;
+
   /*ASK for room info*/
   $http({
     url: $rootScope.serverURL+'/v1/room/'+$scope.roomID,
@@ -14,6 +16,8 @@ app.controller('RoomController', function($window, $interval, $scope, $rootScope
     $scope.roomInfo = response.data.roomInfo;
     $scope.startSeconds = response.data.currentSongTime;
     $scope.playlist = response.data.queue.playlist;
+  }, function(response){
+    $location.path('/');
   });
 
   /*Creating YT player*/
@@ -58,6 +62,7 @@ app.controller('RoomController', function($window, $interval, $scope, $rootScope
       $scope.player.loadVideoById($scope.playlist[0].id, $scope.startSeconds);
     }
   }, 1000);
+
   /*Update playlist*/
   $interval(function(){
     $http({
