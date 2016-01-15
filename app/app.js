@@ -15,5 +15,5 @@ app.config(function($routeProvider){
 
 app.run(function($http, $rootScope){
   $http.defaults.headers.post["Content-Type"] = "application/json";
-  $rootScope.serverURL = "http://192.168.0.15:9000";
+  $rootScope.serverURL = "http://dudj-jasbar.rhcloud.com";
 });
