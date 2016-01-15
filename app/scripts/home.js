@@ -4,7 +4,7 @@ app.controller('CreateRoomController', function($scope, $rootScope, $http, $loca
   $scope.submitRoomInfo = function(){
     $http({
       method: 'POST',
-      url: 'http://192.168.0.15:9000/v1/rooms/add'
+      url: $rootScope.serverURL+'/v1/rooms/add'
     }).then(function(response){
       $scope.roomInfo = response.data.roomInfo;
       $http({
