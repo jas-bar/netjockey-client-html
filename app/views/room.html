@@ -1,5 +1,5 @@
 <div class="container-fluid text-center bg1">
-  <h1>DUDJ pre-pre-alpha</h1>
+  <h1><a href='#/'>{{dudjHeader}}</a></h1>
   <h2>{{roomInfo.name}}</h2>
 </div>
 <div class="container-fluid text-center bg2">
@@ -7,6 +7,7 @@
     <div class="col-md-3 form-group" ng-controller="SubmitSongController as submitSongController">
       <label>Youtube link:</label>
       <input ng-model="songURL" type="text" class="input-md form-control">
+      <hr>
       <button ng-click="submitSong()" type="button" class="btn btn-success btn-block">Submit</button>
     </div>
     <div class="col-md-6">

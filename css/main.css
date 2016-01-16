@@ -1,5 +1,5 @@
 .bg1{
-  background-color: transparent;
+  background-color: rgba(60, 59, 60, 0.3);
 }
 
 .bg2{
@@ -16,7 +16,20 @@ h1 {
   text-shadow: 2px 2px #000000;
 }
 
+hr {
+  border-color: rgb(94, 94, 94);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.rounded {
+  border-radius:10px;
+}
+
 .container-fluid {
+  border-radius:20px;
   padding-top: 70px;
   padding-bottom: 70px;
 }
