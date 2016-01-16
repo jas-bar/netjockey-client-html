@@ -1,20 +1,19 @@
 .bg1{
-  /*background-color: #32bb8e;*/
-  background-color: #222222;
+  background-color: transparent;
 }
 
 .bg2{
-  /*background-color: #45a1cf;*/
   background-color: #1b1b1b;
 }
 
 .bg3{
-  /*background-color: #852fa3;*/
-  background-color: #2d2d2d;
+  background-color: rgba(45, 45, 45, 0.8);
 }
 
 h1 {
   font-family: 'Lobster', cursive;
+  color: #cfcfcf;
+  text-shadow: 2px 2px #000000;
 }
 
 .container-fluid {
@@ -25,10 +24,45 @@ h1 {
 body {
   font: 20px "Montserrat", sans-serif;
   line-height: 1.8;
-  background-color: #000000;
   color: #cfcfcf;
+  text-shadow: 2px 2px #000000;
+  background:url('/img/bg1.jpg') no-repeat center center;
+  background-attachment: fixed;
+  min-height:100%;
+  background-size:cover;
 }
 
 .margin {
   margin-bottom: 45px;
+}
+
+.playlist-song {
+  text-overflow: ellipsis;
+	overflow: hidden;
+  word-wrap: normal;
+	background-color: #4f4f4f;
+}
+
+.roomlist-room {
+  text-overflow: ellipsis;
+	overflow: hidden;
+  word-wrap: normal;
+  background-color: #333132;
+}
+
+.roomlist-room h3{
+  color: #eeeeee;
+}
+
+.roomlist a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
+  background-color: #3c3c3c;
+}
+
+nav ul {
+  height: 460px;
+}
+
+nav ul {
+  overflow: hidden;
+  overflow-y: scroll;
 }

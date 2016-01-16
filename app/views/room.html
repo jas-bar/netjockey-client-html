@@ -1,5 +1,4 @@
 <div class="container-fluid text-center bg1">
-  <!--<img class="img-circle pull-left" src="img/logo1.png">-->
   <h1>DUDJ pre-pre-alpha</h1>
   <h2>{{roomInfo.name}}</h2>
 </div>
@@ -16,9 +15,11 @@
       </div>
     </div>
     <div class="col-md-3">
-      <ul class="list-group">
-        <li class="list-group-item playlist-song" ng-repeat="song in playlist"><img class="img-rounded" width="128px" height="72px" src="{{song.thumbnailUrl}}"><h3>{{song.title}}</h3></li>
-      </ul>
+      <nav class="navbar">
+        <ul class="list-group">
+          <li class="list-group-item playlist-song" ng-repeat="song in playlist"><img class="img-rounded" width="128px" height="72px" src="{{song.thumbnailUrl}}"><h3>{{song.title}}</h3></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
