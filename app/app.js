@@ -13,7 +13,7 @@ app.config(function($routeProvider){
   });
 });
 
-dudjMOTDS = ["Uz bez tresy.. :(",
+dudjMOTDS = ["Uz bez tresky.. :(",
 "Dizajner by sa zisiel!",
 "Dudududududu dudududu...",
 "Vyrobene 100% na slove.... v cesku!",
