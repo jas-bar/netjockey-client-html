@@ -1,12 +1,15 @@
 <div class="container-fluid text-center bg1">
-  <h1><a href='#/'>{{dudjHeader}}</a></h1>
+  <h1><a href='#/'><a href='#/'><img src="http://dudoserver.1sg.sk/dudj-html/img/dudj-logo-alpha.png" class="img" width="25%" height="25%"></a></h1>
   <h2>{{roomInfo.name}}</h2>
+  <br>
+  <img src="http://dudoserver.1sg.sk/dudj-html/img/arrow.png" class="img">
 </div>
+<div class="container-fluid delimiter"></div>
 <div class="container-fluid text-center bg2">
   <div class="row">
     <div class="col-md-3 form-group" ng-controller="SubmitSongController as submitSongController">
-      <label>Youtube link:</label>
-      <input ng-model="songURL" type="text" class="input-md form-control">
+      <label>Add song:</label>
+      <input ng-model="songURL" type="text" placeholder="Youtube link: https://" class="input-md form-control">
       <hr>
       <button ng-click="submitSong()" type="button" class="btn btn-success btn-block">Submit</button>
     </div>

@@ -1,5 +1,5 @@
 .bg1{
-  background-color: rgba(60, 59, 60, 0.3);
+  background-color: rgba(60, 59, 60, 0.6);
 }
 
 .bg2{
@@ -8,6 +8,10 @@
 
 .bg3{
   background-color: rgba(45, 45, 45, 0.8);
+}
+
+.bg4{
+  background-color: rgb(28, 28, 28);
 }
 
 h1 {
@@ -25,13 +29,20 @@ a {
 }
 
 .rounded {
-  border-radius:10px;
+  border-radius: 5px !important;
+}
+
+.sharp {
+  border-radius: 0px !important;
+}
+
+.delimiter {
+  max-height: 100px;
 }
 
 .container-fluid {
-  border-radius:20px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 body {
@@ -42,7 +53,7 @@ body {
   background:url('http://dudoserver.1sg.sk/dudj-html/img/bg1.jpg') no-repeat center center;
   background-attachment: fixed;
   min-height:100%;
-  background-size:cover;
+  background-size: cover;
 }
 
 .margin {
@@ -60,15 +71,20 @@ body {
   text-overflow: ellipsis;
 	overflow: hidden;
   word-wrap: normal;
-  background-color: #333132;
+  background-color: rgba(200, 200, 200, 0.5);
+  border-radius: 0px;
 }
 
 .roomlist-room h3{
   color: #eeeeee;
 }
 
+.roomlist-container {
+  padding-bottom: 30px;
+}
+
 .roomlist a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, button.list-group-item:hover {
-  background-color: #3c3c3c;
+  background-color: rgba(135, 2, 89, 0.5);
 }
 
 nav ul {
@@ -78,4 +94,24 @@ nav ul {
 nav ul {
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.two-col-special {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.two-col-special a {
+  float: left;
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* In case multi-word categories form two lines */
+}
+.two-col-special a:before {
+    padding: 5px;
+    margin-right: 5px; /* you can tweak the gap */
+    display: inline-block;
 }

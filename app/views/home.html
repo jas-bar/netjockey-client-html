@@ -1,24 +1,24 @@
 <div class="container-fluid text-center bg1">
-  <h1><a href='#/'>{{dudjHeader}}</a></h1>
+  <h1><a href='#/'><img src="http://dudoserver.1sg.sk/dudj-html/img/dudj-logo-alpha.png" class="img" width="25%" height="25%"></a></h1>
   <h2>{{dudjMOTD}}</h2>
+  <br>
+  <img src="http://dudoserver.1sg.sk/dudj-html/img/arrow.png" class="img">
 </div>
-<div class="container-fluid text-center">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-4 text-center bg2 rounded">
-      <div class="form-group" ng-controller="CreateRoomController as createRoomController">
-        <label>Room name:</label>
-        <input type="text" ng-model="roomName" class="form-control">
-        <button type="button" ng-click="submitRoomInfo()" class="btn btn-primary btn-block">Create Room</button>
-      </div>
+<div class="container-fluid delimiter"></div>
+<div class="container-fluid">
+  <div class="col-md-4 col-md-offset-4 text-center bg2 rounded">
+    <div class="form-group" ng-controller="CreateRoomController as createRoomController">
+      <label>Create video room:</label>
+      <input type="text" ng-model="roomName" placeholder="Room name" class="form-control">
+      <button type="button" ng-click="submitRoomInfo()" class="btn btn-primary btn-block">Create Room</button>
     </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-4 text-center bg3 rounded" ng-controller="RoomListController as roomListController">
-      <label>Rooms list:</label>
-      <div class="list-group roomlist">
-        <a ng-repeat="room in roomList" class="list-group-item roomlist-room" href="#/room/{{room.id}}"><h3><span class="glyphicon glyphicon-play pull-left"></span>{{room.name}}</h3></a>
-      </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="roomlist-container col-md-8 col-md-offset-2 text-center bg3 rounded" ng-controller="RoomListController as roomListController">
+    <label>Current video rooms:</label>
+    <div class="list-group two-col-special roomlist">
+      <a ng-repeat="room in roomList" class="list-group-item roomlist-room sharp" href="#/room/{{room.id}}"><img src="/img/play-button.png" alt="play" class="img pull-left"><h3>{{room.name}}</h3></a>
     </div>
-    <div class="col-md-1"></div>
   </div>
 </div>

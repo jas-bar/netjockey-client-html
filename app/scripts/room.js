@@ -88,5 +88,6 @@ app.controller('SubmitSongController', function($http, $scope, $rootScope){
       method: 'POST',
       data: JSON.stringify({url: $scope.songURL})
     });
+    $scope.songURL = "";
   }
 });
