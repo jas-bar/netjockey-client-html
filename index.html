@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="DUDJ">
   <head>
     <meta charset="UTF-8">
     <!-- YOUTUBE-API -->
@@ -19,8 +19,9 @@
     <script src="app/app.js"></script>
     <script src="app/scripts/room.js"></script>
     <script src="app/scripts/home.js"></script>
+    <title ng-bind="roomName+'|DUDJ'">DUDJ</title>
   </head>
-  <body ng-app="DUDJ">
+  <body>
     <div ng-view=""></div>
     <div class="container-fluid delimiter"></div>
     <div class="container-fluid bg4">

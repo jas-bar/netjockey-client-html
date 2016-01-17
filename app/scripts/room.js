@@ -16,6 +16,7 @@ app.controller('RoomController', function($window, $location, $interval, $scope,
     $scope.roomInfo = response.data.roomInfo;
     $scope.startSeconds = response.data.currentSongTime;
     $scope.playlist = response.data.queue.playlist;
+    $rootScope.roomName = $scope.roomInfo.name;
   }, function(response){
     $location.path('/');
   });

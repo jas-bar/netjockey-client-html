@@ -64,7 +64,23 @@ body {
   text-overflow: ellipsis;
 	overflow: hidden;
   word-wrap: normal;
-	background-color: #4f4f4f;
+  max-height: 180px;
+  height: 180px;
+  position: relative;
+  background-color: #000000;
+}
+
+.playlist-song h3 {
+  position: relative;
+}
+
+.playlist-song img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
 }
 
 .roomlist-room {

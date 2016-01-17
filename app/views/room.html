@@ -21,7 +21,10 @@
     <div class="col-md-3">
       <nav class="navbar">
         <ul class="list-group">
-          <li class="list-group-item playlist-song" ng-repeat="song in playlist"><img class="img-rounded" width="128px" height="72px" src="{{song.thumbnailUrl}}"><h3>{{song.title}}</h3></li>
+          <li class="list-group-item playlist-song" ng-repeat="song in playlist">
+            <img src="{{song.thumbnailUrl}}">
+            <h3 style="z-index: 2">{{song.title}}</h3>
+          </li>
         </ul>
       </nav>
     </div>
