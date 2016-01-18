@@ -10,7 +10,7 @@ app.controller('CreateRoomController', function($scope, $rootScope, $http, $loca
       $http({
         method: 'POST',
         url: $rootScope.serverURL+'/v1/room/'+$scope.roomInfo.id+'/rename',
-        data: JSON.stringify({name: $scope.createRoom.roomName})
+        data: JSON.stringify({name: $scope.roomName})
       }).then(function(response){
         $location.path('/room/'+$scope.roomInfo.id);
       });
