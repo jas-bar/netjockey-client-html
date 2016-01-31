@@ -10,7 +10,7 @@ app.controller('RoomController', function($window, $location, $interval, $scope,
 
   /*ASK for room info*/
   $http({
-    url: $rootScope.serverURL+'/v1/room/'+$scope.roomID,
+    url: $rootScope.serverURL+'/v1/room/'+$scope.roomID+'?maxResults='+$rootScope.dudjRoomSongLimit,
     method: 'GET'
   }).then(function(response){
     $scope.roomInfo = response.data.roomInfo;
@@ -68,7 +68,7 @@ app.controller('RoomController', function($window, $location, $interval, $scope,
   $interval(function(){
     $http({
       method: 'GET',
-      url: $rootScope.serverURL+'/v1/room/'+$scope.roomID+'/queue'
+      url: $rootScope.serverURL+'/v1/room/'+$scope.roomID+'/queue?maxResults='+$rootScope.dudjRoomSongLimit
     }).then(function(response){
       $scope.playlist = response.data.playlist;
     });

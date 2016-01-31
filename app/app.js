@@ -36,4 +36,5 @@ app.run(function($http, $rootScope){
   $rootScope.serverURL = "http://dudj-jasbar.rhcloud.com";
   $rootScope.dudjHeader = "DUDJ pre-alpha";
   $rootScope.dudjMOTD = dudjMOTDS[Math.floor(Math.random() * dudjMOTDS.length)];
+  $rootScope.dudjRoomSongLimit = 20;
 });
