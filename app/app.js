@@ -33,10 +33,7 @@ dudjMOTDS = ["Uz bez tresky.. :(",
 
 app.run(function($http, $rootScope, $window){
   $http.defaults.headers.post["Content-Type"] = "application/json";
-  $rootScope.serverURL = "http://dudj-jasbar.rhcloud.com";
-  if($window.location.href.startsWith("https")) {
-    $rootScope.serverURL = "https://dudj-jasbar.rhcloud.com";
-  }
+  $rootScope.serverURL = "https://dudj-jasbar.rhcloud.com";
   $rootScope.dudjHeader = "DUDJ pre-alpha";
   $rootScope.dudjMOTD = dudjMOTDS[Math.floor(Math.random() * dudjMOTDS.length)];
   $rootScope.dudjRoomSongLimit = 20;
