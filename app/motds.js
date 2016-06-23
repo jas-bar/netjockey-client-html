@@ -1,0 +1,3 @@
+var motds = [
+	"Net Jockey"
+];

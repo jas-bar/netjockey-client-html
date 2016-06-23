@@ -1,8 +1,8 @@
 <div class="container-fluid text-center bg1">
-  <h1><a href='#/'><img src="http://dudoserver.1sg.sk/dudj-html/img/dudj-logo-alpha.png" class="img" width="25%" height="25%"></a></h1>
-  <h2>{{dudjMOTD}}</h2>
+  <h1><a href='#/'><img src="../img/logo.png" class="img" width="25%" height="25%"></a></h1>
+  <h2>{{MOTD}}</h2>
   <br>
-  <img src="http://dudoserver.1sg.sk/dudj-html/img/arrow.png" class="img">
+  <img src="../img/arrow.png" class="img">
 </div>
 <div class="container-fluid delimiter"></div>
 <div class="container-fluid">
@@ -18,7 +18,7 @@
   <div class="roomlist-container col-md-8 col-md-offset-2 text-center bg3 rounded" ng-controller="RoomListController as roomListController">
     <label>Current video rooms:</label>
     <div class="list-group two-col-special roomlist">
-      <a ng-repeat="room in roomList" class="list-group-item roomlist-room sharp" href="#/room/{{room.id}}"><img src="http://dudoserver.1sg.sk/dudj-html/img/play-button.png" alt="play" class="img pull-left"><h3>{{room.name}}</h3></a>
+      <a ng-repeat="room in roomList" class="list-group-item roomlist-room sharp" href="#/room/{{room.id}}"><img src="../img/play-button.png" alt="play" class="img pull-left"><h3>{{room.name}}</h3></a>
     </div>
   </div>
 </div>

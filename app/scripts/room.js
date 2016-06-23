@@ -1,4 +1,4 @@
-var app = angular.module("DUDJ");
+var app = angular.module("NETJOCKEY");
 
 app.controller('RoomController', function($window, $location, $interval, $scope, $rootScope, $routeParams, $http){
 

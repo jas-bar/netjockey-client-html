@@ -1,4 +1,4 @@
-var app = angular.module("DUDJ");
+var app = angular.module("NETJOCKEY");
 
 app.controller('CreateRoomController', function($scope, $rootScope, $http, $location){
   $scope.submitRoomInfo = function(){

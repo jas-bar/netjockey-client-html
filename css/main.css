@@ -50,7 +50,7 @@ body {
   line-height: 1.8;
   color: #cfcfcf;
   text-shadow: 2px 2px #000000;
-  background:url('http://dudoserver.1sg.sk/dudj-html/img/bg1.jpg') no-repeat center center;
+  background:url('../img/bg1.jpg') no-repeat center center;
   background-attachment: fixed;
   min-height:100%;
   background-size: cover;
